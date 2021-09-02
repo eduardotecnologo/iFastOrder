@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/cupertino.dart';
+import './register_page.dart';
+import './widgets/heading_auth.dart';
 
 class LoginScreen extends StatelessWidget {
 
@@ -23,7 +26,7 @@ class LoginScreen extends StatelessWidget {
           child: Column(
             children: <Widget>[
               Container(height: 100,),
-              _headingAuth(),
+              HeadingAuth(),
               Container(height: 80,),
               _formLogin(context),
               Container(height: 40,),
@@ -34,18 +37,7 @@ class LoginScreen extends StatelessWidget {
           ),
       );
     }
-  Widget _headingAuth(){
-    return Container(
-      height: 100,
-      width: 100,
-      decoration: BoxDecoration(
-        image: DecorationImage(
-          image:AssetImage('assets/images/iFastOrderIcon.png'),
-          fit: BoxFit.fill
-        )
-      ),
-    );
-  }
+  //
   Widget _formLogin(context){
     return Container(
       padding: EdgeInsets.all(10),
@@ -119,6 +111,8 @@ class LoginScreen extends StatelessWidget {
       child: MaterialButton(
         onPressed: (){
           print('Login....');
+          Navigator.pushReplacementNamed(context, '/restaurants');
+
         },
         color: Theme.of(context).primaryColor,
         child: Text('Entrar'),
@@ -130,7 +124,8 @@ class LoginScreen extends StatelessWidget {
   Widget _textRegister(context){
     return GestureDetector(
       onTap: (){
-        print("foi");
+        //Navigator.of(context).push( MaterialPageRoute(builder: (context) => RegisterPage())
+        Navigator.pushReplacementNamed(context, '/register');
       },
       child: Text("Cadastre-se",
       style: TextStyle(

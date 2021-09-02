@@ -1,8 +1,13 @@
-import 'package:appifast/screens/autha/login_page.dart';
 import 'package:flutter/material.dart';
 
-void main() => runApp(IfastOrderApp());
+import './screens/auth/login_page.dart';
+import './screens/auth/register_page.dart';
+import 'package:appifast/models/Restaurant.dart';
+import './screens/restaurants/widgets/RestaurantCard.dart';
+import './screens/restaurants/restaurants_page.dart';
 
+
+void main() => runApp(IfastOrderApp());
 
 class IfastOrderApp extends StatelessWidget {
   // This widget is the root of your application.
@@ -17,7 +22,12 @@ class IfastOrderApp extends StatelessWidget {
         accentColor: Colors.black,
         brightness: Brightness.dark
       ),
-      home: LoginScreen(),
+      initialRoute: '/login',
+      routes: <String, WidgetBuilder>{
+        '/login': (context) => LoginScreen(),
+        '/register': (context) => RegisterPage(),
+        '/restaurants': (context) => RestaurantsPage(),
+      },
     );
   }
 }
