@@ -46,6 +46,7 @@ class _RestaurantsPageState extends State<RestaurantsPage> {
         title: Text('Restaurantes'),
         centerTitle: true,
       ),
+      backgroundColor: Theme.of(context).backgroundColor,
       body: _buildRestaurantes(context),
     );
   }
