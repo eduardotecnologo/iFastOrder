@@ -12,7 +12,7 @@
           <div class="row align-items-center py-2">
             <div class="col-4 text-center">
               <div class="img-circle">
-                <img class="img-responsive" src="imgs/acai.png" alt="prewiew" width="120" height="80">
+                <img class="img-responsive" src="@/assets/img/acai.png" alt="prewiew" width="120" height="80">
               </div>
             </div>
             <div class="col-8 text-left">
@@ -42,7 +42,7 @@
           <div class="row align-items-center py-2">
             <div class="col-4 text-center">
               <div class="img-circle">
-                <img class="img-responsive" src="imgs/pizza.png" alt="prewiew" width="120" height="80">
+                <img class="img-responsive" src="@/assets/img/pizza.png" alt="prewiew" width="120" height="80">
               </div>
             </div>
             <div class="col-8 text-left">
