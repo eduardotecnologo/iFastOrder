@@ -1,0 +1,125 @@
+body{
+  padding-top: 56px;
+  background-color: #fbfbfb;
+}
+.btn-full{
+  width: 100%;
+}
+.landing-header{
+  display: grid;
+  justify-items: center;
+  background: #b63132;
+  padding-bottom: 30px;
+  text-align: center;
+}
+.landing-header-logo{}
+.landing-header-logo img{
+  max-width: 150px;
+}
+.landing-header-text{
+  font-size: 2.5rem;
+  letter-spacing: normal;
+  line-height: 2.5rem;
+  color: #fff;
+  font-family: "Sulsans", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  padding: 20px;
+}
+.bg-ifast{
+  background: #b63132;
+}
+.restaurant-card {
+  border: 1px solid #f2f2f2;
+  display: grid;
+  transition: 200ms;
+  padding: 12px;
+  border-radius: 4px;
+  box-shadow: 0px 1px 4px rgba(0,0,0,0.05);
+  text-decoration: none;
+  width: 100%;
+  grid-column-gap: 12px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  background: #fff;
+  text-align: center;
+}
+.restaurant-card .logo {
+    display: block;
+    width: 100px;
+    margin: 0 auto;
+}
+.restaurant-card-body a {
+    color: #3e3e3e;
+    font-size: 0.875rem;
+    line-height: 0.875rem;
+    font-weight: 500;
+    white-space: nowrap;
+    height: 18px;
+}
+.logo{
+  width: 90px;
+  max-width: 100%;
+}
+.title-tenant {
+    color: #B63132;
+    margin: 10px 0;
+}
+/* detais pedido */
+.details {
+  background:  #fff;
+  border-radius: 1rem;
+  box-shadow: 0 0 50px rgba(0,0,0,.1);
+  padding:  20px;
+  font-size: 14px;
+}
+.details ul li {
+  margin-bottom: 10px;
+}
+.details-card {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  padding: 15px;
+  background: #fff;
+  box-shadow: 0 0 50px rgba(0,0,0,.1);
+  border-radius: .75rem;
+  margin-bottom: 15px;
+  align-items: center;
+}
+.details-card .card-img-top {
+  box-shadow: 0 0 50px rgba(0,0,0,.1);
+  border-radius: .75rem;
+}
+
+.card-footer-custom {
+    padding: .75rem 1.25rem;
+    background-color: #b63132;
+    border-top: 1px solid rgb(182, 49, 50);
+    text-align: center;
+}
+/** cart **/
+.quantity {
+    float: left;
+    margin-right: 15px;
+    background-color: #eee;
+    position: relative;
+    width: 80px;
+    overflow: hidden
+}
+.quantity input{
+  margin: 0;
+  text-align: center;
+  width: 15px;
+  height: 15px;
+  padding: 0;
+  float: right;
+  color: #000;
+  font-size: 20px;
+  border: 0;
+  outline: 0;
+  background-color: #f6f6f6;
+}
+.quantity input.qty{
+  position: relative;
+  border: 0;
+}
+

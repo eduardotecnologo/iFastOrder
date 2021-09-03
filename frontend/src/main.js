@@ -1,9 +1,12 @@
-import { createApp } from 'vue';
+import Vue from 'vue'
 import VueRouter from 'vue-router';
 import router from './routes';
 import DefaultTemplate from './layouts/DefaultTemplate.vue';
 
-createApp(DefaultTemplate)
-.use(VueRouter)
-.use(router)
-.mount('#app')
+
+Vue.config.productionTip = false
+
+new Vue({
+  render: h => h(DefaultTemplate),
+  router
+}).$mount('#app')
