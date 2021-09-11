@@ -2,7 +2,7 @@
 @section('title','Planos')
 
 @section('content_header')
-    <h1>Planos</h1>
+    <h1>Planosa <a href="{{ route('planos.create') }}" class="btn btn-success">Criar novo</a> </h1>
 @stop
 
 @section('content')
@@ -23,22 +23,17 @@
                 <tbody>
                     @foreach ($planos as $plan)
                         <tr>
-                            <td>
-                                {{ $plan->name }}
-                            </td>
-                            <td>
-                                {{ $plan->price }}
-                            </td>
-                            <td>
-                                {{ $plan->description }}
-                            </td>
-                            <td>
-                                <a href="#" class="btn btn-warning">Ver</a>
-                            </td>
+                            <td>{{ $plan->name }}</td>
+                            <td>{{ $plan->price }}</td>
+                            <td>{{ $plan->description }}</td>
+                            <td><a href="#" class="btn btn-warning">Ver</a></td>
                         </tr>
                     @endforeach
                 </tbody>
             </table>
+        </div>
+        <div class="card-footer">
+            {!! $planos->links() !!}
         </div>
     </div>
 @stop

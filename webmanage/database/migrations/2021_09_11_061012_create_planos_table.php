@@ -18,7 +18,7 @@ class CreatePlanosTable extends Migration
             $table->string('name')->unique();
             $table->string('url')->unique();
             $table->string('description');
-            $table->double('price', 10,2);
+            $table->double('price', 10,02);
             $table->timestamps();
         });
     }
