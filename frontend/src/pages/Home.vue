@@ -3,7 +3,7 @@
 
       <div class="col-lg-12">
 
-        <h1 class="my-4 title-tenant">Restaurantes</h1>
+        <h1 class="my-4 title-tenant">Parceiros</h1>
 
         <div class="row my-4">
 

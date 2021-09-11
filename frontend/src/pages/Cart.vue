@@ -17,10 +17,10 @@
             </div>
             <div class="col-8 text-left">
               <h4 class="product-name"><strong>Açai Bomba</strong></h4>
-              <h5 class="h6">Product description</h5>
+              <h5 class="h6">Descrição do Produto</h5>
               <div class="d-flex py-4 justify-content-between align-items-center">
                 <div class="col-10 d-flex align-items-center p-0 ">
-                    <h6><strong>R$ 12,99 <span class="text-muted">x</span></strong></h6>
+                    <h6><strong>R$ 12,99 <span class="text-muted">X</span></strong></h6>
                      <div class="quantity ml-4">
                         <input type="button" value="+" class="plus">
                         <input type="number" step="1" max="99" min="1" value="1" title="Qty" class="qty"
@@ -47,10 +47,10 @@
             </div>
             <div class="col-8 text-left">
               <h4 class="product-name"><strong>Pizza Salgada</strong></h4>
-              <h5 class="h6">Product description</h5>
+              <h5 class="h6">Descrição do Produto</h5>
               <div class="d-flex py-4 justify-content-between align-items-center">
                 <div class="col-10 d-flex align-items-center p-0 ">
-                    <h6><strong>R$ 12,99 <span class="text-muted">x</span></strong></h6>
+                    <h6><strong>R$ 12,99 <span class="text-muted">X</span></strong></h6>
                      <div class="quantity ml-4">
                         <input type="button" value="+" class="plus">
                         <input type="number" step="1" max="99" min="1" value="1" title="Qty" class="qty"

@@ -227,9 +227,8 @@ return [
     'menu' => [
         // Navbar items:
         [
-            'type'         => 'navbar-search',
-            'text'         => 'search',
-            'topnav_right' => true,
+            'text'         => 'Planos',
+            'url'         => 'admin/planos',
         ],
         [
             'type'         => 'fullscreen-widget',

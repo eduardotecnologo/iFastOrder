@@ -23,4 +23,5 @@ export default {
 <style lang="css" scoped>
 @import url('../assets/css/ifast.css');
 @import url('../assets/css/reset.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css');
 </style>
