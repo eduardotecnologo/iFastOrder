@@ -9,10 +9,15 @@
     <div class="card">
         <div class="card-body">
             <ul>
-                <li><strong>Nome: {{ $plano->name }}</strong></li>
-                <li><strong>Preço: {{ $plano->price }}</strong></li>
-                <li><strong>Descrição: {{ $plano->description }}</strong></li>
+                <li><strong>Nome: </strong>{{ $plano->name }}</li>
+                <li><strong>Preço: R$ </strong>{{ number_format($plano->price, 2,',','.' )}}</li>
+                <li><strong>Descrição: </strong>{{ $plano->description }}</li>
             </ul>
+            <form action="{{ route('planos.destroy', $plano->url ) }}" method="POST">
+                @csrf
+                @method('DELETE')
+                <button type="submit" class="btn btn-danger">Deletar <i class="fas fa-trash"></i></button>
+            </form>
         </div>
     </div>
 @endsection
